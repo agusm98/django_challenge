@@ -4,7 +4,7 @@ from .models import Rating
 class RatingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Rating
-        fields = ('id', 'date', 'character_id', 'character_name', 'rate')
+        fields = ('id', 'date', 'character_id', 'rate')
 
 class UrlSerializer(serializers.Serializer):
     '''Serializer para validacion de urls'''
@@ -13,4 +13,4 @@ class UrlSerializer(serializers.Serializer):
 
 class CharacterSerializer(serializers.Serializer):
     fields = ('name', 'height', 'mass', 'hair_color', 'skin_color', 'eye_color',\
-        'birth_year', 'gender', 'homeworld')
+        'birth_year', 'gender', 'homeworld', 'species')

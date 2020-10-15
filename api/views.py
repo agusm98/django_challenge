@@ -2,12 +2,12 @@ from django.shortcuts import render
 from .serializers import RatingSerializer, UrlSerializer, CharacterSerializer
 from rest_framework import viewsets, status
 from rest_framework.response import Response
-from .services import ApiCharacter, Database
+from .services import ApiConnCharacter, Database
 
 class CharacterViewSet(viewsets.ViewSet):
 
     def get(self, request, id):
-        conn = ApiCharacter()
+        conn = ApiConnCharacter()
 
         valURL = UrlSerializer(data={'URL':conn.URL, 'Slug':id})
 

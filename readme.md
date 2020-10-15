@@ -24,6 +24,8 @@ Por ahora solo se incluyen los siguientes endpoints:
 1.GET /character/<id>/
 2.POST /character/<id>/rating/
 
+*Para consumir la api se utilizo la herramienta Postman*
+
 En el cual en el endpoint 1 podemos obtener los siguientes campos de informacion segun el id de personaje:
 
 'name': text
